@@ -1,0 +1,15 @@
+{
+	"name": "adfcontrolflowvb",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "be0315bf-ad6f-4d35-97ab-e73f89a31fff",
+		"tenantId": "d03b96b7-f672-47ca-a6c6-0fb02c0d6fca"
+	}
+}

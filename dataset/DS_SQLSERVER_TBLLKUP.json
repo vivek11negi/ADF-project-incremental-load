@@ -1,0 +1,35 @@
+{
+	"name": "DS_SQLSERVER_TBLLKUP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLSEREVER_ADF",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "TableSchema",
+				"type": "varchar"
+			},
+			{
+				"name": "TableName",
+				"type": "varchar"
+			},
+			{
+				"name": "WatermarkColumn",
+				"type": "varchar"
+			},
+			{
+				"name": "LastLoadValue",
+				"type": "bigint",
+				"precision": 19
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ADF_Watermark_Table"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
